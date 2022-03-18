@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+
+    const key='AIzaSyAfCRifDXVzJzpegGcvhfG4OORXCVYhhTU';
+    const userid='UCE_M8A5yxnLfW0KghEeajjw';
+
+    let getDetails = function(){
+
+      fetch(`https://youtube.googleapis.com/youtube/v3/channels?part=snippet%2CcontentDetails%2Cstatistics&id=${userid}&key=${key}`)
+      .then(Response => Response.json())
+      .then(data => {
+        console.log(data);
+        const subscribers = data.items[0].statistics.subscriberCount
+
+        document.querySelector('body').innerHTML = subscribers
+      })
+      .catch(error => {
+        console.log('Error : ',error);
+      })
+    }
+    
+    getDetails();
+
+  </script>
+</body>
+</html>

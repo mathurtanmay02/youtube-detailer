@@ -1,0 +1,94 @@
+body {
+    color : blanchedalmond;
+    background-color: slat;
+}
+
+a {
+    color: blanchedalmond;
+    text-decoration: none;
+}
+
+nav {
+    background-color: black;
+}
+
+#nav_div {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#nav_img {
+    width: 70px;
+    padding: 0px;
+}
+
+#intro {
+    text-align: center;
+    background-color: gray;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    display: none;
+}
+
+#input {
+    background-color: gray;
+    border-radius: 20px;
+    text-align: center;
+    margin: 244px;
+    padding: 20px;
+    display: block;
+}
+
+#input_h3 {
+    margin: 15px;
+}
+
+#input_textbox {
+    text-align: center;
+    margin: 15px;
+    margin-top: 0px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+#input_submit {
+    margin: 15px;
+    margin-top: 0px;
+}
+
+#details {
+    background-color: gray;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    display: none;
+}
+
+#details_ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.details_ul_li {
+    padding: 10px;
+}
+
+.details_ul_li_span {
+    color: black;
+}
+
+#Owner_a {
+    color: black;
+}
+
+#details_another {
+    margin: 15px;
+}
+
+#details_another_button, #input_submit_div {
+    background-color: gray;
+    color: blanchedalmond;
+}
